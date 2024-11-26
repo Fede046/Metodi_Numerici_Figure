@@ -100,7 +100,7 @@ bezRomboDgsx.ab = bezRomboD.ab;
 
 
  C=[Cf5(2,1),Cf5(2,2)];
- 
+
  %crea una matrice di traslazione 
  T=get_mat_trasl(-C);
  %radianti 
@@ -134,7 +134,7 @@ bezRomboDgSx.ab = bezRomboD.ab;
 
 %crea una matrice di traslazione 
  C=[Cf5(3,1),Cf5(3,2)];
- 
+
 T=get_mat_trasl(-C);
  %radianti 
  alfa=1;
@@ -173,10 +173,10 @@ bezEsternosx=bezRomboD;
 bezEsternosx.cp =bezRomboD.cp*0.9+[Cf12(i,1) Cf12(i,2)];
 %xy=curv2_ppbezier_plot(bezEsternosx,60 ,'k-') ;
 %fill(xy(: ,1) ,xy(: ,2) ,'y') ;
-    
-   
+
+
 C=[Cf12(i,1),Cf12(i,2)];
- 
+
 T=get_mat_trasl(-C);
 alfa =0;
  %radianti 
@@ -202,18 +202,18 @@ end
 %point_plot(ppbT.cp(1 ,:) ,'bo-');
  fill(xy(: ,1) ,xy(: ,2) ,'r') ;
 %
- 
-    
+
+
     elseif i==10 ||i==4
 bezEsternosx=bezRombo;
 bezEsternosx.cp =bezRombo.cp*0.9+[Cf12(i,1) Cf12(i,2)];
 
 %xy=curv2_ppbezier_plot(bezEsternosx,60 ,'k-') ;
 %fill(xy(: ,1) ,xy(: ,2) ,'y') ;
- 
+
 %ruoto di 90 gradi
 C=[Cf12(i,1),Cf12(i,2)];
- 
+
 T=get_mat_trasl(-C);
  %radianti 
   alfa=pi/2;
@@ -243,7 +243,7 @@ bezEsternosx.cp =bezRombo.cp*0.9+[Cf12(i,1) Cf12(i,2)];
 
 
 C=[Cf12(i,1),Cf12(i,2)];
- 
+
 T=get_mat_trasl(-C);
 alfa =0;
  %radianti 
@@ -322,4 +322,5 @@ fill(xy(:,1),xy(:,2),'b');
 
 xy = curv2_ppbezier_plot(bezRomboDs,60,'k');
 fill(xy(:,1),xy(:,2),'b');
+
 
