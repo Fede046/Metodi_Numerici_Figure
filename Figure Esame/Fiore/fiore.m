@@ -1,89 +1,102 @@
 clear all
 close all
 
-% Apertura della figura e impostazione della griglia
 open_figure(1);
 grid("on");
+hold on
 
-% Il fiore è formato da pistillo e petali (foglie) attorno al pistillo
+%cerchio----------------------------------------------
+p = linspace(0,2*pi,9);
 
-% Pistillo P
-
-% Ciclo for per generare un cerchio usando curve di Bézier
-ik = 1;
-for i=0:pi/4:2*pi
-   [P(ik,1),P(ik,2)] = c2_circle(i,0.5); % Calcola i punti del cerchio
-   ik = ik + 1;
+for i=1:9
+    [A0(i,1), A0(i,2)] = c2_circle(p(i),0.2);
 end
-P = P + [1 0]; % Traslazione del pistillo lungo l'asse x
+%riduzione misura
+A0=A0/8;
 
-% Interpolazione dei punti del pistillo con una curva di Bézier
-bPP = curv2_bezier_interp(P,0,1,1);
-xy = curv2_ppbezier_plot(bPP,60,'k-'); % Tracciamento del pistillo
-fill(xy(:,1),xy(:,2),'b'); % Colorazione del pistillo in blu
+%faccio le curve di bez dei punti
+Cf0 = curv2_bezier_interp(A0,0,1,1); 
 
-% Petali F
+%stampo
+xy=curv2_ppbezier_plot(Cf0,100,'b');
+fill(xy(:,1),xy(:,2),'b');
 
-% Definizione dei punti base per un petalo
-F = [
-    0 0
-    1 0.4
-    2 0
-];
-bPF = curv2_bezier_interp(F,0,1,1); % Interpolazione del petalo con una curva di Bézier
+%petalo-------------------------------------------------
+p = linspace(0,pi/2,8);
 
-% Creazione della simmetria del petalo
-[ppbF, T, R] = align_curve(bPF); % Allinea la curva al punto iniziale
-ppbF.cp(:,2) = -ppbF.cp(:,2); % Riflette la curva rispetto all'asse x
-Minv = inv(R*T); % Matrice inversa per il ritorno alla posizione originale
-ppbF.cp = point_trans(ppbF.cp, Minv); % Trasformazione inversa
+for i=1:8
+    [AC(i,1), AC(i,2)] = c2_circle(p(i),0.2);
+end
+q=3/4*pi;
+cc = AC*[cos(q),sin(q);-sin(q),cos(q)];
+%faccio le curve di bez dei punti
+Cf0 = curv2_bezier_interp(cc,0,1,1); 
 
-% Unione delle due metà del petalo in una curva unica
-ppbFo = curv2_ppbezier_join(ppbF, bPF, 1.0e-4);
+%lato sx
+C0.cp=-Cf0.cp;
+C0.ab=Cf0.ab;
+C0.deg=Cf0.deg;
 
-% Rimpicciolimento del petalo e traslazione
-ppbFo.cp = (ppbFo.cp * 0.7) + [1.5 0];
+%riflessione petalo
+[C0,T,R]=align_curve(Cf0);
+C0.cp(: ,2)=-C0.cp(: ,2) ;
+Minv=inv(R*T) ;
+C0.cp=point_trans(C0.cp ,Minv) ;
 
-% Rotazione del petalo
 
-ppbFoR.ab = ppbFo.ab; % Copia dei parametri della curva originale
-ppbFoR.deg = ppbFo.deg;
+%join delle curve
+C0S = curv2_ppbezier_join(Cf0,C0,1.0e-4);
 
-% Trova il centro della curva del pistillo
-B = [1 0]; % Centro del pistillo (assunto noto)
+C0S.cp=C0S.cp/3+[0.047,0.08];
 
-% Definizione delle matrici di traslazione e rotazione
-T = get_mat_trasl(-B); % Traslazione al centro
-Tinv = get_mat_trasl(B); % Traslazione inversa
-alfa = pi/4; % Angolo di rotazione
-R = get_mat2_rot(alfa); % Matrice di rotazione
-M = Tinv * R * T; % Matrice composta per rotazione rispetto al baricentro
+%xy=curv2_ppbezier_plot(C0S,100,'r');
+%fill(xy(:,1),xy(:,2),'r');
 
-% Rotazione dei petali attorno al pistillo
+
+%1 rotazione--------------------------------------------
+ppbFoR.cp=C0S.cp;
+ppbFoR.ab=C0S.ab;
+ppbFoR.deg = C0S.deg;
+%baricentro del cerchio
+B=[0 0];
+%definisce matrice di traslazione
+T=get_mat_trasl(-B);
+Tinv=get_mat_trasl(B);
+%rotazione attorno a un punto tipo mandala applicato alle curve di bez
 for i=-0.1:pi/3.5:2*pi
-    R = get_mat2_rot(i); % Aggiornamento angolo di rotazione
-    M = Tinv * R * T; % Matrice di trasformazione
-    ppbFoR.cp = point_trans(ppbFo.cp, M); % Trasformazione dei punti del petalo
-    xy = curv2_ppbezier_plot(ppbFoR,60,'k-'); % Tracciamento del petalo
-    fill(xy(:,1),xy(:,2),'g'); % Colorazione dei petali in verde
+    R=get_mat2_rot(i);
+    M=Tinv*R*T;
+    ppbFoR.cp=point_trans(C0S.cp,M);
+    xy = curv2_ppbezier_plot(ppbFoR,60,'k');
+    %coloro i petali
+    fill(xy(: ,1) ,xy(: ,2) ,'g') ;
 end
 
-% Disegno di un secondo livello di petali più grandi
+%2 rot------------------------------------------------
+
+C0S.cp=C0S.cp*1.9;
+ppbFoR2.cp=C0S.cp;
+ppbFoR2.ab=C0S.ab;
+ppbFoR2.deg=C0S.deg;
+
 for i=((pi/3.5)-0.2)/2:pi/3.5:2*pi
-    R = get_mat2_rot(i);
-    M = Tinv * R * T;
-    ppbFoR.cp = point_trans(ppbFo.cp.*[2.5,2.5]+[-1.85 0], M); % Scala e traslazione del petalo
-    xy = curv2_ppbezier_plot(ppbFoR,60,'k-');
-    fill(xy(:,1),xy(:,2),'r'); % Colorazione dei petali in rosso
+    R=get_mat2_rot(i);
+    M=Tinv*R*T;
+    ppbFoR2.cp=point_trans(C0S.cp,M);
+    xy = curv2_ppbezier_plot(ppbFoR2,60,'k');
+    %coloro i petali
+    fill(xy(: ,1) ,xy(: ,2) ,'r') ;
 end
 
-% Funzione per l'allineamento delle curve
-function [ppbezQ, T, R] = align_curve(ppbezP)
-    ncp = length(ppbezP.cp(:,1));
-    ppbezQ = ppbezP; % Copia della curva originale
-    T = get_mat_trasl(-ppbezP.cp(1,:)); % Traslazione al punto iniziale
-    alfa = -atan2(ppbezP.cp(ncp,2) - ppbezP.cp(1,2), ppbezP.cp(ncp,1) - ppbezP.cp(1,1)); % Calcolo dell'angolo
-    R = get_mat2_rot(alfa); % Matrice di rotazione
-    M = R * T; % Matrice composita
-    ppbezQ.cp = point_trans(ppbezP.cp, M); % Trasformazione dei punti
+
+
+%------------------------------------------------------------
+function [ppbezQ,T,R]=align_curve (ppbezP)
+ ncp=length(ppbezP.cp(: ,1) ) ;
+ ppbezQ=ppbezP;
+ T=get_mat_trasl(-ppbezP.cp(1 ,:) ) ;
+ alfa = -atan2(ppbezP.cp(ncp ,2) - ppbezP.cp(1 ,2) , ppbezP.cp(ncp ,1) - ppbezP.cp(1 ,1)) ;
+ R=get_mat2_rot(alfa ) ;
+ M=R*T;
+ ppbezQ.cp=point_trans(ppbezP.cp ,M) ;
 end
