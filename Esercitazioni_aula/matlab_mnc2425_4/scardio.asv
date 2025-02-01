@@ -1,0 +1,31 @@
+clear all;
+close all;
+
+% Definizione parametri cardioide
+theta = linspace(0, 2*pi, 110); % Angoli tra 0 e 2π
+r = 1 - cos(theta); % Equazione parametrica della cardioide
+
+% Coordinate della cardioide
+x = r .* cos(theta);
+y = r .* sin(theta);
+
+% Figura principale
+figure('Position', [10 10 500 400]);
+plot(x, y, 'b-', 'LineWidth', 1.5); % Disegno della cardioide
+axis equal;
+hold on;
+
+% Numero di rotazioni
+n = 7;
+
+% Ciclo per disegnare la cardioide ruotata
+for i = 1:n
+    ang = (2*pi/n) * i; % Angolo di rotazione
+    R = [cos(ang), -sin(ang); sin(ang), cos(ang)]; % Matrice di rotazione
+
+    % Ruotare le coordinate
+    xy_rotated = R * [x; y];
+
+    % Disegnare la cardioide ruotata
+    plot(xy_rotated(1, :), xy_rotated(2, :), 'r-', 'LineWidth', 1.5);
+end
