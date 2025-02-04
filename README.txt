@@ -1,10 +1,9 @@
 
+---
+
 # 📌 Repository di Esercitazioni ed Esercizi per l'Esame  
 
-In questa repository ho raccolto:  
-✅ **Esercitazioni svolte in classe**  
-✅ **Esercizi aggiuntivi per esercitarmi**  
-✅ **Script utili per risolvere alcune figure d'esame**  
+Ho creato questa repository perché online non ho trovato molto materiale per comprendere la libreria del professore e non c’erano abbastanza esercizi su cui esercitarmi. Avere una raccolta di esercizi già svolti, anche solo come spunto, mi sarebbe stato utile, quindi ho deciso di condividerla.  
 
 ## 🔹 Approccio all'Esame  
 
@@ -24,13 +23,17 @@ Se invece la libreria non è cambiata molto, **ti consiglio di dare un'occhiata 
 
 L'esame si è svolto **in presenza all'università**, con la possibilità di usare il proprio PC e accedere a **Internet**.  
 
+## ✅ Cosa Trovi in Questa Repository  
+
+🔹 **Esercitazioni svolte in classe**  
+🔹 **Esercizi aggiuntivi per esercitarmi**  
+🔹 **Script utili per risolvere alcune figure d'esame**  
+
 ## 🔄 Aggiornamenti  
 
 Non credo che aggiornerò frequentemente questa repository, perché la materia è molto di nicchia e non avrebbe senso farlo se la libreria non viene aggiornata.  
 
 ---  
-
 **Fede**  
-
 ---
 
