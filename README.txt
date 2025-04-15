@@ -1,6 +1,3 @@
-
----
-
 📌 Repository di Esercitazioni ed Esercizi per l'Esame  
 
 Ho creato questa repository perché online non ho trovato molto materiale per comprendere la libreria del professore e non c’erano abbastanza esercizi su cui esercitarmi. Avere una raccolta di esercizi già svolti, anche solo come spunto, mi sarebbe stato utile, quindi ho deciso di condividerla.  
@@ -24,8 +21,7 @@ L'esame si è svolto in presenza all'università, con la possibilità di usare i
 🔄 Aggiornamenti  
 
 Non credo che aggiornerò frequentemente questa repository.  
-
----  
+ 
 Fede  
----
+
 
