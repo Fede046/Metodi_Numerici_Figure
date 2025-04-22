@@ -19,8 +19,9 @@ L'esame si è svolto in presenza all'università, con la possibilità di usare i
 🔹 Script utili per risolvere alcune figure d'esame  
 
 🔄 Aggiornamenti  
+- Per segnalare errori o suggerire miglioramenti, apri una Issue.
+- Se vuoi condividere materiale aggiuntivo (appunti, esercizi svolti, esame, etc.), puoi aprire una Issue con i dettagli.
 
-Non credo che aggiornerò frequentemente questa repository.  
  
 Fede  
 
