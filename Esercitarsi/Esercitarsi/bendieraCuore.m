@@ -219,18 +219,3 @@ for i=1:length(t)
 end
 end
 
-%trovo la prima tangente
-%notiamo l'effetto di curv2_ppbezier_reverse
-%bezCuoEsterno=curv2_ppbezier_reverse(bezCuoEsterno);
-%uso la funzione della libreria curv2_bezier_tan_plot
-%Px = curv2_bezier_tan_plot(bezCuoEsterno,2,'c-',2);
-% Px=decast_valder(bezP,1,0)
-
-%se abbiamo delle limitazioni della tolleranza:
-% esempio ci impone una tolleranza di tol = 1.0e-3;
-% io rimpicciolirei la figura ma non sono sicuro sarebbe da provare
-
-
-% io questo caso abbiao dei punti che non seguono una funzione quindi non 
-% non penso sia necessario calcolare l'errore
-
