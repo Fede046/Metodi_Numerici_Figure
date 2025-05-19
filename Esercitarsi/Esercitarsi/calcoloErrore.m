@@ -79,32 +79,6 @@ end
 
 
 
-%traslazione dal centro
-%C = bezCuore_Int.cp(1,:);
-%T = get_mat_trasl(-C);
-%T1 = get_mat_trasl([0 0.7]);
-%M = T*T1;
-%bezCuore_Int.cp = point_trans(bezCuore_Int.cp,M);
-%curv2_ppbezier_plot(bezCuore_Int,60,'r');
-%
-%B=[0 0];
-%%%definisce matrice di traslazione
-%T=get_mat_trasl(-B);
-%Tinv=get_mat_trasl(B);
-%
-%%rotazione attorno a un punto tipo mandala applicato alle curve di bez
-%ppbFoR=bezCuore_Int;
-%
-%p = linspace(0,2*pi, 16)
-%for i=1:16
-%   R=get_mat2_rot(p(i));
-%   M=Tinv*R*T;
-%   ppbFoR.cp=point_trans(bezCuore_Int.cp,M);
-%   curv2_ppbezier_plot(ppbFoR,60,'k-');
-%end
-
-
-
 
 
 
