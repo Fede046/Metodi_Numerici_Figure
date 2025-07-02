@@ -47,6 +47,4 @@ Un piccolo gesto che può aiutare altri studenti come te.
 Grazie!
 **Fede**
 
----
 
-Fammi sapere se vuoi aggiungere anche una sezione di licenza (es. con avviso contro il copia-incolla), oppure un badge GitHub o l'indice dei file inclusi.
