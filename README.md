@@ -11,14 +11,47 @@ Se le formule che trovi qui **non corrispondono** a quelle che stai usando, **qu
 Se invece la libreria è rimasta simile, ti consiglio di dare un’occhiata almeno alla parte relativa all’esame.
 
 ---
+## Modalità d’Esame (Preappello)
 
-##  Modalità d’Esame
+Il **preappello** si è svolto:
 
-L’esame si è svolto:
+- In presenza, presso l’università  
+- Con possibilità di usare il proprio **PC**  
+- Con accesso a **Internet**
 
-* **In presenza** all’università
-* Con possibilità di usare il proprio **PC**
-* Con accesso a **Internet**
+Nota: Il preappello è disponibile a solo chi va ai laboratori, e fa un solo appello (Non è disponibile per studenti di anni passati)
+
+### Consiglio personale
+
+Se disponibile, **consiglio di sostenere il preappello**, soprattutto se si è più a proprio agio con la pratica e si vuole evitare l’orale.
+
+### Quando evitare il preappello
+
+Potresti **non scegliere il preappello** se:
+
+- Vuoi comprendere a fondo la **teoria della materia**, che nel preappello è trattata **poco o per nulla**
+- **Non vuoi fare i disegni**
+
+---
+
+## Esame completo (sessione ufficiale)
+
+L’esame è **Orale** (60-45 min)
+
+## Preparazione per l’esame
+- All'esame chiede gli esercizi svolti durante l'anno nelle eserciztazioni.
+- Capire **cosa fa** ogni parte del codice, **perché lo fa** e **quali errori** possono verificarsi.
+- Concentrarsi sulle **esercitazioni dalla 3 alla 8** (parti legate alla libreria e alla teoria).
+- Conoscere i **concetti teorici fondamentali** collegati agli esercizi.
+- All’orale potrebbero comparire **domande teoriche semplici**.
+- Durante l’esame orale si visualizza il proprio codice con **commenti annessi**, quindi **commentare il codice** può risultare estremamente utile.
+- All'orale potrebbe chidere molte dimostrazioni per i voti alti.
+
+---
+###  Note
+Non sono richiesti **disegni** per l'esame (ufficiale). La prova si concentra solo sulle **esercitazioni** e sulla **teoria correlata**.
+Il libro _"Dispense di Metodi Numerici per il Calcolo"_ può essere utile per approfondire la **teoria**. **Non è necessario per il preappello**, ma può servire per l’orale o per chiarire i fondamenti teorici.
+
 
 ---
 
