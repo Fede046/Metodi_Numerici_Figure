@@ -76,8 +76,8 @@ Questa repository contiene:
 
 Lascia una  stella alla repository!
 Un piccolo gesto che può aiutare altri studenti come te.
-Sono disponibile per ripetizioni principalmente per la preparazione al pre-appello. 
-In tal caso mi contatti su Telegram oppure Instagram
+* Sono disponibile per ripetizioni principalmente per la preparazione al pre-appello. 
+* In tal caso mi contatti su Telegram oppure Instagram
 
 **Fede**
 
