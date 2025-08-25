@@ -1,4 +1,4 @@
-Ho creato questa repository perché online ho trovato poco materiale utile per comprendere la **libreria del professore** e non c’erano abbastanza esercizi su cui esercitarmi.
+Ho creatoquesta repository perché online ho trovato poco materiale utile per comprendere la **libreria del professore** e non c’erano abbastanza esercizi su cui esercitarmi.
 Avere una raccolta di esercizi già svolti — anche solo come spunto — mi sarebbe stato molto utile, quindi ho deciso di condividerla.
 
 ---
