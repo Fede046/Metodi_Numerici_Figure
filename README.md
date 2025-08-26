@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td><img width="675" height="855" alt="Prima immagine" src="https://github.com/user-attachments/assets/153ef936-3e08-4838-9bf4-02075885c7fe" /></td>
+    <td><img width="676" height="855" alt="Seconda immagine" src="https://github.com/user-attachments/assets/91be2245-7a98-494b-a55b-aaf851ab5073" /></td>
+  </tr>
+</table>
+
 Ho creato questa repository perché online ho trovato poco materiale utile per comprendere la **libreria del professore** e non c’erano abbastanza esercizi su cui esercitarmi.
 Avere una raccolta di esercizi già svolti — anche solo come spunto — mi sarebbe stato molto utile, quindi ho deciso di condividerla.
 
