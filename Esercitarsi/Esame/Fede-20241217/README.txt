@@ -1,3 +1,4 @@
+Voto:30
 Questo era il mio esame,
 La limitazione del calcolo dell'errore non era fattibile perché altrimenti la curva risultava deformata.
 L'esame però risulta corretto.
