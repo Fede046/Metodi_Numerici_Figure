@@ -1,3 +1,11 @@
+
+##  Se ti è stata utile...⭐
+
+Lascia una  stella alla repository!
+Un piccolo gesto che può aiutare altri studenti come te.
+
+---
+
 <table>
   <tr>
     <td><img width="675" height="855" alt="Prima immagine" src="https://github.com/user-attachments/assets/153ef936-3e08-4838-9bf4-02075885c7fe" /></td>
