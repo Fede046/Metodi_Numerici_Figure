@@ -1,9 +1,4 @@
-
-##  Se ti è stata utile...⭐
-
-Lascia una  stella alla repository!
-Un piccolo gesto che può aiutare altri studenti come te.
-
+Ho condiviso questi appunti gratuitamente. La loro realizzazione ha richiesto diverse ore di lavoro; se li trovassi utili, ti chiederei di lasciare una ⭐ alla repository come supporto e riconoscimento.
 ---
 
 <table>
