@@ -21,15 +21,26 @@ Se le formule che trovi qui **non corrispondono** a quelle che stai usando, **qu
 Se invece la libreria è rimasta simile, ti consiglio di dare un’occhiata almeno alla parte relativa all’esame.
 
 ---
-## Modalità d’Esame (Preappello)
 
-Il **preappello** si è svolto:
+## Mia Modalità d’Esame (Preappello)
 
-- In presenza, presso l’università  
-- Con possibilità di usare il proprio **PC**  
-- Con accesso a **Internet**
+Il **preappello** consisteva in una prova di laboratorio con le seguenti caratteristiche:
 
-Nota: Il preappello è disponibile a solo chi va ai laboratori, e fa un solo appello (Non è disponibile per studenti di anni passati)
+* Veniva fornito un file `.p` da eseguire in **MATLAB**, contenente una **figura da ricopiare** e una **consegna** (legata ad argomenti teorici (es.perimetro,area,errore,...)) collegata ad essa.
+* Il lavoro doveva essere svolto **partendo da foglio bianco**.
+
+### Svolgimento
+
+Il preappello si è svolto:
+
+* **In presenza**, presso l’università
+* Con possibilità di utilizzare il **proprio PC**
+* Con **accesso a Internet**
+
+### Nota
+
+Il preappello era disponibile **solo per gli studenti che hanno frequentato i laboratori** e prevedeva **un unico appello**.
+**Non era disponibile per studenti di anni precedenti.**
 
 ### Consiglio personale
 
@@ -87,7 +98,7 @@ Questa repository contiene:
 Lascia una  stella alla repository!
 Un piccolo gesto che può aiutare altri studenti come te.
 * Sono disponibile per ripetizioni principalmente per la preparazione al pre-appello. 
-* In tal caso mi contatti su Telegram oppure Instagram
+* In tal caso mi contatti su Telegram oppure Instagram 
 
 **Fede**
 
