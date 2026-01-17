@@ -91,14 +91,7 @@ Questa repository contiene:
 * Per **segnalare errori** o **suggerire miglioramenti**, apri una **Issue**.
 * Se vuoi **condividere materiale aggiuntivo** (esercizi, appunti, prove d’esame, ecc.), sentiti libero di aprire una **Issue con i dettagli**.
 
----
 
-##  Se ti è stata utile...
-
-Lascia una  stella alla repository!
-Un piccolo gesto che può aiutare altri studenti come te.
-* Sono disponibile per ripetizioni principalmente per la preparazione al pre-appello. 
-* In tal caso mi contatti su Telegram oppure Instagram 
 
 **Fede**
 
